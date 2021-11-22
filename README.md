@@ -50,12 +50,12 @@ OBS: A resposta vai depender dos itens cadastrados no desafio acima.
 
 
 3 - **Listar dispositivo pelo "deviceId"**: A url para acesso "http://localhost:8080/listar/deviceId/{id}"
-utilize as informações retornadas do desafio acima para pegar o deviceID. Trocar o "{id}" pelo valor retirado do banco.
+utilize as informações retornadas do desafio acima para pegar o deviceID. Trocar o "{id}" pelo valor retirado da resposta.
 
 ```
 Verbo: GET
 ```
-OBS: A resposta irá depender do valor pego.
+OBS: A resposta irá depender do valor colocado no id.
 
 
 4 - **Desafio Bônus**: Aqui deixo um JSON para exemplo a url para acesso "http://localhost:8080/registrar/async"
