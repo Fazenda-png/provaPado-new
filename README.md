@@ -50,7 +50,7 @@ OBS: A resposta vai depender dos itens cadastrados no desafio acima.
 
 
 3 - **Listar dispositivo pelo "deviceId"**: A url para acesso "http://localhost:/listar/deviceId/{id}"
-após fazer o acesso ao banco H2(http://localhost:8080/h2-console/, senha é password) para pegar o deviceID. Trocar o "{id}" pelo valor retirado do banco.
+utilize as informações retornadas do desafio acima para pegar o deviceID. Trocar o "{id}" pelo valor retirado do banco.
 
 ```
 Verbo: GET
