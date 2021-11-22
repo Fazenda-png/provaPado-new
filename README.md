@@ -49,7 +49,7 @@ Verbo: GET
 OBS: A resposta vai depender dos itens cadastrados no desafio acima.
 
 
-3. **Listar dispositivo pelo "deviceId"**: A url para acesso "http://localhost:/listar/deviceId/{id}"
+3 - **Listar dispositivo pelo "deviceId"**: A url para acesso "http://localhost:/listar/deviceId/{id}"
 após fazer o acesso ao banco H2(http://localhost:8080/h2-console/, senha é password) para pegar o deviceID trocar o "{id}" pelo valor retirado do banco.
 
 ```
@@ -58,7 +58,7 @@ Verbo: GET
 OBS: A resposta irá depender do valor pego.
 
 
-4. **Desafio Bônus**: Aqui deixo um JSON para exemplo a url para acesso "http://localhost:/registrar/async"
+4 - **Desafio Bônus**: Aqui deixo um JSON para exemplo a url para acesso "http://localhost:/registrar/async"
 
 ```
 Verbo: POST
