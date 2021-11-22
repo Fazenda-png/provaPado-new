@@ -1,17 +1,27 @@
 version: "3.2"
 services:
-  rabbitmq:
-    image: rabbitmq:3-management
-    container_name: rabbitmq_new
+  demopado:
+    image: prova-pado1
     ports:
-     - 5672:5672
-     - 15672:15672
-    volumes:
-     - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-     - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+      - 8080:8080
+    depends_on:
+      - rabbitmq
+    links:
+      - rabbitmq:rabbitmq
     networks:
-      - rabbitmq_go_net
-      
+      - my_newtwork
+  rabbitmq:
+    image: rabbitmq:3.6-management
+    hostname: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - my_newtwork
+
 networks:
-  rabbitmq_go_net:
+  default:
+    external: true
+    name: my_newtwork
+  my_newtwork:
     driver: bridge
